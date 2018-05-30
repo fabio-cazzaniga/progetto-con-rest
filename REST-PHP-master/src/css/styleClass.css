@@ -1,0 +1,93 @@
+/*modifico la classe del drawer per l'assegnazione della dimensione richiesta*/
+.mdl-layout__drawer {
+    width: 300px;
+    left: -50px;
+    border: 0;
+}
+
+.mdl-layout__drawer.is-visible {
+    left: 0;
+}
+
+/*classe per la personalizzazione del drawer*/
+.nav-md {
+    width: auto;
+    height: 130px;
+    display: flex;
+    align-items: flex-end;
+    padding: 24px;
+    background-color: rgb(63, 81, 181);
+    color: white;
+}
+
+/*classe per posizionare le icone nel drawer*/
+.md-ip {
+    margin-right: 18px;
+}
+
+/*modifica per l'ordinamento degli elementi nella navbar*/
+.mdl-layout__drawer .mdl-navigation {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding-top: 16px;
+    flex: auto;
+}
+
+/*classe per la modifica dell'header*/
+.header-style {
+    padding: 0 12px 0 70px;
+}
+
+/*modifico la classe della nav nell'header*/
+.mdl-layout__header-row .mdl-navigation__link {
+    display: block;
+    color: rgb(255, 255, 255);
+    line-height: 64px;
+    padding: 0 12px 0 0;
+}
+
+/*modifico la classe container per l'assegnazione dello sfondo*/
+.mdl-layout__content {
+    background-image: url("../../public/Candy-Wallpaper-1.jpg");
+    background-position: center;
+    -ms-flex: 0 1 auto;
+    position: relative;
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    z-index: 1;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Allinea gli elementi figli al centro, verticalmente e orizzontalmente */
+.center-childrens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Per i messaggi di errore/output */
+.alert-box {
+    flex-direction: column;
+    min-height: fit-content;
+
+    height: fit-content;
+    width: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+
+    color: white;
+}
+
+.alert-box > h3 {
+    margin: auto;
+}
